@@ -15,28 +15,40 @@ public class Portfolio {
     private String nombre;
     private String descripcion;
     private String img;
-    private String lenguaje;
+    private Integer htmlValue;
+    private Integer cssValue;
+    private Integer jsValue;
+    private Integer javaValue;
+    private String frameworksAndLibraries;
     private String enlace;
     private String despliegue;
 
     public Portfolio() {
     }
 
-    public Portfolio(Integer id, String nombre, String descripcion, String img, String lenguaje, String enlace, String despliegue) {
+    public Portfolio(Integer id, String nombre, String descripcion, String img, Integer htmlValue, Integer cssValue, Integer jsValue, Integer javaValue, String frameworksAndLibraries, String enlace, String despliegue) {
         this.id = id;
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.img = img;
-        this.lenguaje = lenguaje;
+        this.htmlValue = htmlValue;
+        this.cssValue = cssValue;
+        this.jsValue = jsValue;
+        this.javaValue = javaValue;
+        this.frameworksAndLibraries = frameworksAndLibraries;
         this.enlace = enlace;
         this.despliegue = despliegue;
     }
 
-    public Portfolio(String nombre, String descripcion, String img, String lenguaje, String enlace, String despliegue) {
+    public Portfolio(String nombre, String descripcion, String img, Integer htmlValue, Integer cssValue, Integer jsValue, Integer javaValue, String frameworksAndLibraries, String enlace, String despliegue) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.img = img;
-        this.lenguaje = lenguaje;
+        this.htmlValue = htmlValue;
+        this.cssValue = cssValue;
+        this.jsValue = jsValue;
+        this.javaValue = javaValue;
+        this.frameworksAndLibraries = frameworksAndLibraries;
         this.enlace = enlace;
         this.despliegue = despliegue;
     }
@@ -73,20 +85,52 @@ public class Portfolio {
         this.img = img;
     }
 
+    public Integer getHtmlValue() {
+        return htmlValue;
+    }
+
+    public void setHtmlValue(Integer htmlValue) {
+        this.htmlValue = htmlValue;
+    }
+
+    public Integer getCssValue() {
+        return cssValue;
+    }
+
+    public void setCssValue(Integer cssValue) {
+        this.cssValue = cssValue;
+    }
+
+    public Integer getJsValue() {
+        return jsValue;
+    }
+
+    public void setJsValue(Integer jsValue) {
+        this.jsValue = jsValue;
+    }
+
+    public Integer getJavaValue() {
+        return javaValue;
+    }
+
+    public void setJavaValue(Integer javaValue) {
+        this.javaValue = javaValue;
+    }
+
+    public String getFrameworksAndLibraries() {
+        return frameworksAndLibraries;
+    }
+
+    public void setFrameworksAndLibraries(String frameworksAndLibraries) {
+        this.frameworksAndLibraries = frameworksAndLibraries;
+    }
+
     public String getEnlace() {
         return enlace;
     }
 
     public void setEnlace(String enlace) {
         this.enlace = enlace;
-    }
-
-    public String getLenguaje() {
-        return lenguaje;
-    }
-
-    public void setLenguaje(String lenguaje) {
-        this.lenguaje = lenguaje;
     }
 
     public String getDespliegue() {
@@ -102,11 +146,11 @@ public class Portfolio {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Portfolio portfolio = (Portfolio) o;
-        return Objects.equals(id, portfolio.id) && Objects.equals(nombre, portfolio.nombre) && Objects.equals(descripcion, portfolio.descripcion) && Objects.equals(img, portfolio.img) && Objects.equals(lenguaje, portfolio.lenguaje) && Objects.equals(enlace, portfolio.enlace) && Objects.equals(despliegue, portfolio.despliegue);
+        return Objects.equals(id, portfolio.id) && Objects.equals(nombre, portfolio.nombre) && Objects.equals(descripcion, portfolio.descripcion) && Objects.equals(img, portfolio.img) && Objects.equals(htmlValue, portfolio.htmlValue) && Objects.equals(cssValue, portfolio.cssValue) && Objects.equals(jsValue, portfolio.jsValue) && Objects.equals(javaValue, portfolio.javaValue) && Objects.equals(frameworksAndLibraries, portfolio.frameworksAndLibraries) && Objects.equals(enlace, portfolio.enlace) && Objects.equals(despliegue, portfolio.despliegue);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, nombre, descripcion, img, lenguaje, enlace, despliegue);
+        return Objects.hash(id, nombre, descripcion, img, htmlValue, cssValue, jsValue, javaValue, frameworksAndLibraries, enlace, despliegue);
     }
 }
