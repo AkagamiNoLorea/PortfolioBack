@@ -49,3 +49,8 @@ public class PortfolioController {
         portfolioService.delete(id);
     }
 }
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable Integer id) {
+        portfolioService.delete(id);
+    }
+}
