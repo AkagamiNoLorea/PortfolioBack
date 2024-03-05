@@ -40,11 +40,7 @@ public class PortfolioService {
         portfolioExisting.setNombre(portfolio.getNombre());
         portfolioExisting.setDescripcion(portfolio.getDescripcion());
         portfolioExisting.setImg(portfolio.getImg());
-        portfolioExisting.setHtmlValue(portfolio.getHtmlValue());
-        portfolioExisting.setCssValue(portfolio.getCssValue());
-        portfolioExisting.setJsValue(portfolio.getJsValue());
-        portfolioExisting.setJavaValue(portfolio.getJavaValue());
-        portfolioExisting.setFrameworksAndLibraries(portfolio.getFrameworksAndLibraries());
+        portfolioExisting.setLenguaje(portfolio.getLenguaje());
         portfolioExisting.setEnlace(portfolio.getEnlace());
         portfolioExisting.setDespliegue(portfolio.getDespliegue());
 
